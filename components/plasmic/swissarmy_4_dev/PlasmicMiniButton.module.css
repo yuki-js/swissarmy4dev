@@ -1,0 +1,27 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  position: relative;
+  padding: 8px;
+}
+.root:active {
+  transform: translateX(1px) translateY(1px) translateZ(0px);
+}
+.root:hover .slotTargetChildren {
+  color: #707070;
+}
+.root:active .slotTargetChildren {
+  color: #272727;
+}
+.svg__wmTxq {
+  object-fit: cover;
+  max-width: 100%;
+  width: 1em;
+  flex-shrink: 0;
+  height: 1em;
+}

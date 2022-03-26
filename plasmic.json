@@ -1,0 +1,239 @@
+{
+  "platform": "nextjs",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
+  },
+  "images": {
+    "scheme": "public-files",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "3sWsabkqMN5rF9tgqCnVDh",
+      "projectApiToken": "3WdcQh8VsADSclIZFKe1iuffDJeHNeSGKu94AtVU4DIaDIcDDdUXiSWHUOaQwwafMKDjt0njT0wBZRw4s8Qg",
+      "projectName": "swissarmy4dev",
+      "version": "latest",
+      "cssFilePath": "plasmic/swissarmy_4_dev/plasmic_swissarmy_4_dev.module.css",
+      "components": [
+        {
+          "id": "WReG0kfettn73",
+          "name": "StringInput",
+          "type": "managed",
+          "projectId": "3sWsabkqMN5rF9tgqCnVDh",
+          "renderModuleFilePath": "plasmic/swissarmy_4_dev/PlasmicStringInput.tsx",
+          "importSpec": {
+            "modulePath": "StringInput.tsx"
+          },
+          "cssFilePath": "plasmic/swissarmy_4_dev/PlasmicStringInput.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "EGFnv4IDIWK-5",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "3sWsabkqMN5rF9tgqCnVDh",
+          "renderModuleFilePath": "plasmic/swissarmy_4_dev/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "Button.tsx"
+          },
+          "cssFilePath": "plasmic/swissarmy_4_dev/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "y4VNm62InZzQR",
+          "name": "BigIconButton",
+          "type": "managed",
+          "projectId": "3sWsabkqMN5rF9tgqCnVDh",
+          "renderModuleFilePath": "plasmic/swissarmy_4_dev/PlasmicBigIconButton.tsx",
+          "importSpec": {
+            "modulePath": "BigIconButton.tsx"
+          },
+          "cssFilePath": "plasmic/swissarmy_4_dev/PlasmicBigIconButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "FlU_PKfwwn",
+          "name": "Container",
+          "type": "managed",
+          "projectId": "3sWsabkqMN5rF9tgqCnVDh",
+          "renderModuleFilePath": "plasmic/swissarmy_4_dev/PlasmicContainer.tsx",
+          "importSpec": {
+            "modulePath": "Container.tsx"
+          },
+          "cssFilePath": "plasmic/swissarmy_4_dev/PlasmicContainer.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "HyhoohE-va",
+          "name": "Card",
+          "type": "managed",
+          "projectId": "3sWsabkqMN5rF9tgqCnVDh",
+          "renderModuleFilePath": "plasmic/swissarmy_4_dev/PlasmicCard.tsx",
+          "importSpec": {
+            "modulePath": "Card.tsx"
+          },
+          "cssFilePath": "plasmic/swissarmy_4_dev/PlasmicCard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "6HqZwsKMES",
+          "name": "MiniButton",
+          "type": "managed",
+          "projectId": "3sWsabkqMN5rF9tgqCnVDh",
+          "renderModuleFilePath": "plasmic/swissarmy_4_dev/PlasmicMiniButton.tsx",
+          "importSpec": {
+            "modulePath": "MiniButton.tsx"
+          },
+          "cssFilePath": "plasmic/swissarmy_4_dev/PlasmicMiniButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "el8LDJzpRP",
+          "name": "IoPage",
+          "type": "managed",
+          "projectId": "3sWsabkqMN5rF9tgqCnVDh",
+          "renderModuleFilePath": "plasmic/swissarmy_4_dev/PlasmicIoPage.tsx",
+          "importSpec": {
+            "modulePath": "IoPage.tsx"
+          },
+          "cssFilePath": "plasmic/swissarmy_4_dev/PlasmicIoPage.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "eJuRTncMA_",
+          "name": "Io",
+          "type": "managed",
+          "projectId": "3sWsabkqMN5rF9tgqCnVDh",
+          "renderModuleFilePath": "plasmic/swissarmy_4_dev/PlasmicIo.tsx",
+          "importSpec": {
+            "modulePath": "../pages/[id].tsx"
+          },
+          "cssFilePath": "plasmic/swissarmy_4_dev/PlasmicIo.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "b_S_J7Ei1n",
+          "name": "Root",
+          "type": "managed",
+          "projectId": "3sWsabkqMN5rF9tgqCnVDh",
+          "renderModuleFilePath": "plasmic/swissarmy_4_dev/PlasmicRoot.tsx",
+          "importSpec": {
+            "modulePath": "../pages/index.tsx"
+          },
+          "cssFilePath": "plasmic/swissarmy_4_dev/PlasmicRoot.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "0e8BPG79NE",
+          "name": "SidebarItem",
+          "type": "managed",
+          "projectId": "3sWsabkqMN5rF9tgqCnVDh",
+          "renderModuleFilePath": "plasmic/swissarmy_4_dev/PlasmicSidebarItem.tsx",
+          "importSpec": {
+            "modulePath": "SidebarItem.tsx"
+          },
+          "cssFilePath": "plasmic/swissarmy_4_dev/PlasmicSidebarItem.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "meQXaQnIIWq",
+          "name": "IntInput",
+          "type": "managed",
+          "projectId": "3sWsabkqMN5rF9tgqCnVDh",
+          "renderModuleFilePath": "plasmic/swissarmy_4_dev/PlasmicIntInput.tsx",
+          "importSpec": {
+            "modulePath": "IntInput.tsx"
+          },
+          "cssFilePath": "plasmic/swissarmy_4_dev/PlasmicIntInput.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        }
+      ],
+      "icons": [
+        {
+          "id": "WguJg4FH-q",
+          "name": "ContentCopyBlack24DpsvgIcon",
+          "moduleFilePath": "plasmic/swissarmy_4_dev/icons/PlasmicIcon__ContentCopyBlack24Dpsvg.tsx"
+        },
+        {
+          "id": "Z8nqdyP-Qq",
+          "name": "ContentPasteBlack24DpsvgIcon",
+          "moduleFilePath": "plasmic/swissarmy_4_dev/icons/PlasmicIcon__ContentPasteBlack24Dpsvg.tsx"
+        },
+        {
+          "id": "54JbGKKsgH",
+          "name": "ArrowForwardBlack24DpsvgIcon",
+          "moduleFilePath": "plasmic/swissarmy_4_dev/icons/PlasmicIcon__ArrowForwardBlack24Dpsvg.tsx"
+        },
+        {
+          "id": "ewAq1VmWRe",
+          "name": "BackupBlack24DpsvgIcon",
+          "moduleFilePath": "plasmic/swissarmy_4_dev/icons/PlasmicIcon__BackupBlack24Dpsvg.tsx"
+        },
+        {
+          "id": "B55IpMLX_T",
+          "name": "ArrowBackIosBlack24DpsvgIcon",
+          "moduleFilePath": "plasmic/swissarmy_4_dev/icons/PlasmicIcon__ArrowBackIosBlack24Dpsvg.tsx"
+        },
+        {
+          "id": "QujGi_DpxH",
+          "name": "SentimentSatisfiedAltBlack24DpsvgIcon",
+          "moduleFilePath": "plasmic/swissarmy_4_dev/icons/PlasmicIcon__SentimentSatisfiedAltBlack24Dpsvg.tsx"
+        },
+        {
+          "id": "J64mUFlwf_",
+          "name": "RemoveBlack24DpsvgIcon",
+          "moduleFilePath": "plasmic/swissarmy_4_dev/icons/PlasmicIcon__RemoveBlack24Dpsvg.tsx"
+        },
+        {
+          "id": "wFtV6hqAP-",
+          "name": "AddBlack24DpsvgIcon",
+          "moduleFilePath": "plasmic/swissarmy_4_dev/icons/PlasmicIcon__AddBlack24Dpsvg.tsx"
+        }
+      ],
+      "images": [],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "codeComponents": []
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "iGybHbHv8FD52",
+        "name": "Screen",
+        "projectId": "3sWsabkqMN5rF9tgqCnVDh",
+        "contextFilePath": "plasmic/swissarmy_4_dev/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "nextjsConfig": {
+    "pagesDir": "../pages"
+  },
+  "cliVersion": "0.1.175",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.175/dist/plasmic.schema.json"
+}
