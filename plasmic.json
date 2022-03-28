@@ -223,6 +223,19 @@
           "cssFilePath": "plasmic/swissarmy_4_dev/PlasmicEnumInputVariant.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "mOauKsDZOO",
+          "name": "Step",
+          "type": "managed",
+          "projectId": "3sWsabkqMN5rF9tgqCnVDh",
+          "renderModuleFilePath": "plasmic/swissarmy_4_dev/PlasmicStep.tsx",
+          "importSpec": {
+            "modulePath": "Step.tsx"
+          },
+          "cssFilePath": "plasmic/swissarmy_4_dev/PlasmicStep.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

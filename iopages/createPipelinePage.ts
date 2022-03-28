@@ -1,40 +1,29 @@
-import { ToType, TArg } from "@yuki-js/tinytype";
+import { ToType, TArg, Args } from "@yuki-js/tinytype";
 
-type Step = {
+type Step<I extends TArg = TArg> = {
+  /**
+   * If true, the step goes without clicking "next" button.
+   * Set false if XHR or other async/heavy operation is needed.
+   */
   sync: boolean;
-  fn: <I extends TArg, O extends TArg>(
-    ctx: Context,
+  /**
+   * If true, the step has no critical side-effect and can be reverted.
+   */
+  pure: true;
+  fn: <O extends TArg = TArg>(
     types: I,
     values: ToType<I>
-  ) => Promise<
-    [
-      O, // argument type
-      ToType<O> // default value or return value
-    ]
-  >;
-};
-type Property = {
-  id: string;
-  displayName: string;
-  init(): Promise<TArg>;
-  steps: Array<Step>;
+  ) => Promise<{
+    types: O; // argument type
+    values: ToType<O>; // default value or return value
+    next: Step<O>;
+  }>;
 };
 
-class PipelinePage<Id extends string> {
-  constructor(
-    public id: Id,
-    public displayName: string,
-    private _init: () => Promise<TArg>,
-    private _steps: Array<Step>
-  ) {}
+const initialStepArg = Args();
+class PipelinePage {
+  initialStep: Step<ToType<typeof initialStepArg>>;
+  constructor(initialStep: Step<ToType<typeof initialStepArg>>) {
+    this.initialStep = initialStep;
+  }
 }
-export function createPipelinePage<Id extends string>(prop: Property<Id>) {
-  return {
-    id: prop.id,
-    displayName: prop.displayName,
-    init: prop.init,
-    steps: prop.steps,
-  };
-}
-
-class Context {}
