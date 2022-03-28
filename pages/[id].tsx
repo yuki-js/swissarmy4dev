@@ -54,7 +54,8 @@ function GeneralIo() {
   const inputs = (
     <>
       {page.inArg.map((arg, i) => {
-        if (arg.type === "string") {
+        const type = arg.type as string;
+        if (type === "string") {
           return (
             <StringInput
               key={i}
@@ -63,7 +64,7 @@ function GeneralIo() {
               onChange={(e) => updateInArgValues(i, e)}
             />
           );
-        } else if (arg.type === "int32") {
+        } else if (type === "int32") {
           return (
             <IntInput
               key={i}
@@ -72,7 +73,7 @@ function GeneralIo() {
               onChange={(e) => updateInArgValues(i, Number(e))}
             />
           );
-        } else if (arg.type === "int64") {
+        } else if (type === "int64") {
           return (
             <IntInput
               key={i}
@@ -96,16 +97,16 @@ function GeneralIo() {
 
   const [outArgValues, setOutArgValues] = React.useState<any[]>([]);
   const execute = React.useCallback(async () => {
-    const resultPromise = page.apply(null, inArgValues as any);
-    const result = await resultPromise;
+    const result = await (page as any).apply(null, inArgValues);
 
-    setOutArgValues(result as any);
+    setOutArgValues(result);
   }, [inArgValues, page, setOutArgValues]);
   const outputs = React.useMemo(
     () => (
       <>
         {page.outArg.map((arg, i) => {
-          if (arg.type === "string") {
+          const type = arg.type as string;
+          if (type === "string") {
             return (
               <StringInput
                 key={i}
@@ -114,7 +115,7 @@ function GeneralIo() {
                 disabled
               />
             );
-          } else if (arg.type === "int32") {
+          } else if (type === "int32") {
             return (
               <IntInput
                 key={i}
@@ -123,7 +124,7 @@ function GeneralIo() {
                 disabled
               />
             );
-          } else if (arg.type === "int64") {
+          } else if (type === "int64") {
             return (
               <IntInput
                 key={i}
@@ -153,7 +154,7 @@ function GeneralIo() {
       return;
     }
     execute();
-  }, [execute, inArgValues]);
+  }, [execute, inArgValues, page.sync]);
 
   const sidebar = pages.map((p, i) => (
     <SidebarItem key={i} to={`/${p.id}`} active={p.id === page.id}>

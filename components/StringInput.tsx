@@ -37,7 +37,7 @@ function StringInput_(
         props: {
           onClick: async () => {
             const text = await navigator.clipboard.readText();
-            onChange(text);
+            onChange && onChange(text);
           },
         },
       }}

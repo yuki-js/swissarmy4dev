@@ -3,7 +3,7 @@
 import * as React from "react";
 import {
   PlasmicMiniButton,
-  DefaultMiniButtonProps
+  DefaultMiniButtonProps,
 } from "./plasmic/swissarmy_4_dev/PlasmicMiniButton";
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
 
@@ -20,7 +20,9 @@ import { HTMLElementRefOf } from "@plasmicapp/react-web";
 //
 // You can also stop extending from DefaultMiniButtonProps altogether and have
 // total control over the props for your component.
-export interface MiniButtonProps extends DefaultMiniButtonProps {}
+export interface MiniButtonProps extends DefaultMiniButtonProps {
+  onClick?: (e: any) => void;
+}
 
 function MiniButton_(props: MiniButtonProps, ref: HTMLElementRefOf<"div">) {
   // Use PlasmicMiniButton to render this component as it was

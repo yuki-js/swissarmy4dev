@@ -8,8 +8,8 @@ import {
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
 
 export interface IntInputProps extends DefaultIntInputProps {
-  value: BigInt;
-  onChange?: (value: BigInt) => void;
+  value: bigint;
+  onChange?: (value: bigint) => void;
 }
 
 function IntInput_(
@@ -23,7 +23,7 @@ function IntInput_(
       text={{
         value: value.toString(),
         onChange: (e) => {
-          let newBigintInstance: BigInt;
+          let newBigintInstance: bigint;
           try {
             newBigintInstance = BigInt(e.target.value);
           } catch (e) {

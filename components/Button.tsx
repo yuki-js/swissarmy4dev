@@ -3,7 +3,7 @@
 import * as React from "react";
 import {
   PlasmicButton,
-  DefaultButtonProps
+  DefaultButtonProps,
 } from "./plasmic/swissarmy_4_dev/PlasmicButton";
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
 
@@ -20,7 +20,9 @@ import { HTMLElementRefOf } from "@plasmicapp/react-web";
 //
 // You can also stop extending from DefaultButtonProps altogether and have
 // total control over the props for your component.
-export interface ButtonProps extends DefaultButtonProps {}
+export interface ButtonProps extends DefaultButtonProps {
+  onClick?: (e: any) => void;
+}
 
 function Button_(props: ButtonProps, ref: HTMLElementRefOf<"div">) {
   // Use PlasmicButton to render this component as it was

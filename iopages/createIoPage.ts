@@ -2,7 +2,7 @@ import { ToType, TArg } from "@yuki-js/tinytype";
 
 type RemoteFunction<I extends TArg, O extends TArg> = (
   ...args: ToType<I>
-) => Promise<Readonly<ToType<O>>> | Readonly<ToType<O>>;
+) => Promise<Readonly<ToType<O>>>;
 
 export interface RemoteProc<I extends TArg, O extends TArg, Id extends string>
   extends RemoteFunction<I, O> {
