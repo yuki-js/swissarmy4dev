@@ -170,6 +170,59 @@
           "cssFilePath": "plasmic/swissarmy_4_dev/PlasmicIntInput.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "1VmMofk7-8f",
+          "name": "BooleanInput",
+          "type": "managed",
+          "projectId": "3sWsabkqMN5rF9tgqCnVDh",
+          "renderModuleFilePath": "plasmic/swissarmy_4_dev/PlasmicBooleanInput.tsx",
+          "importSpec": {
+            "modulePath": "BooleanInput.tsx"
+          },
+          "cssFilePath": "plasmic/swissarmy_4_dev/PlasmicBooleanInput.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "qY2hlYYzffY",
+          "name": "Switch",
+          "type": "managed",
+          "projectId": "3sWsabkqMN5rF9tgqCnVDh",
+          "renderModuleFilePath": "plasmic/swissarmy_4_dev/PlasmicSwitch.tsx",
+          "importSpec": {
+            "modulePath": "Switch.tsx"
+          },
+          "cssFilePath": "plasmic/swissarmy_4_dev/PlasmicSwitch.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "switch"
+        },
+        {
+          "id": "l3Xpaw7w2K8",
+          "name": "EnumInput",
+          "type": "managed",
+          "projectId": "3sWsabkqMN5rF9tgqCnVDh",
+          "renderModuleFilePath": "plasmic/swissarmy_4_dev/PlasmicEnumInput.tsx",
+          "importSpec": {
+            "modulePath": "EnumInput.tsx"
+          },
+          "cssFilePath": "plasmic/swissarmy_4_dev/PlasmicEnumInput.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "wacjR-sYjk",
+          "name": "EnumInputVariant",
+          "type": "managed",
+          "projectId": "3sWsabkqMN5rF9tgqCnVDh",
+          "renderModuleFilePath": "plasmic/swissarmy_4_dev/PlasmicEnumInputVariant.tsx",
+          "importSpec": {
+            "modulePath": "EnumInputVariant.tsx"
+          },
+          "cssFilePath": "plasmic/swissarmy_4_dev/PlasmicEnumInputVariant.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -212,6 +265,11 @@
           "id": "wFtV6hqAP-",
           "name": "AddBlack24DpsvgIcon",
           "moduleFilePath": "plasmic/swissarmy_4_dev/icons/PlasmicIcon__AddBlack24Dpsvg.tsx"
+        },
+        {
+          "id": "REfP86HN8M",
+          "name": "DoneBlack24DpsvgIcon",
+          "moduleFilePath": "plasmic/swissarmy_4_dev/icons/PlasmicIcon__DoneBlack24Dpsvg.tsx"
         }
       ],
       "images": [],

@@ -8,6 +8,8 @@ import StringInput from "../components/StringInput";
 import { pageMap, pages } from "../iopages";
 import SidebarItem from "../components/SidebarItem";
 import IntInput from "../components/IntInput";
+import EnumInput from "../components/EnumInput";
+import BooleanInput from "../components/BooleanInput";
 
 export async function getStaticPaths() {
   const paths = pages.map((page) => {
@@ -82,6 +84,25 @@ function GeneralIo() {
               onChange={(e) => updateInArgValues(i, e)}
             />
           );
+        } else if (arg.type === "enum") {
+          return (
+            <EnumInput
+              key={i}
+              title={arg.name}
+              variants={arg.variants}
+              value={inArgValues[i]}
+              onChange={(e) => updateInArgValues(i, e)}
+            />
+          );
+        } else if (type === "boolean") {
+          return (
+            <BooleanInput
+              key={i}
+              title={arg.name}
+              value={inArgValues[i]}
+              onChange={(e) => updateInArgValues(i, e)}
+            />
+          );
         } else {
           return (
             <StringInput
@@ -130,6 +151,25 @@ function GeneralIo() {
                 key={i}
                 title={arg.name}
                 value={outArgValues[i] ?? BigInt(0)}
+                disabled
+              />
+            );
+          } else if (arg.type === "enum") {
+            return (
+              <EnumInput
+                key={i}
+                title={arg.name}
+                variants={arg.variants}
+                value={inArgValues[i]}
+                disabled
+              />
+            );
+          } else if (type === "boolean") {
+            return (
+              <BooleanInput
+                key={i}
+                title={arg.name}
+                value={inArgValues[i]}
                 disabled
               />
             );

@@ -1,0 +1,67 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  min-width: 0;
+}
+.freeBox__f5NK4 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  min-width: 0;
+}
+.freeBox__yuQw {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px;
+  margin: 0px;
+}
+.freeBox__uOkSi {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.slotTargetTitle {
+  font-size: 14px;
+}
+.freeBox__m5Xqi {
+  box-shadow: 0px 1px 3px 1px #0000000d;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  border-radius: 5px;
+  padding: 0px;
+  border: 1px solid #9e9d9b4d;
+}
+.root:focus-within .freeBox__m5Xqi {
+  box-shadow: 0px 1px 3px 1px #0000000d, 0px 2px 8px 0px #ed7a4d33;
+  outline: none;
+}
+.enumInputVariant__mINg:global(.__wab_instance) {
+  position: relative;
+}
+.enumInputVariant__gJE5:global(.__wab_instance) {
+  position: relative;
+}
+.enumInputVariant__w8Ndc:global(.__wab_instance) {
+  position: relative;
+}
