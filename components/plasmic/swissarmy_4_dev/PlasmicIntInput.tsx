@@ -165,7 +165,15 @@ function PlasmicIntInput__RenderFunc(props: {
         </div>
 
         {true ? (
-          <div className={classNames(projectcss.all, sty.freeBox__uXn7Y)}>
+          <div
+            className={classNames(projectcss.all, sty.freeBox__uXn7Y, {
+              [sty.freeBoxdisabled__uXn7YUxPar]: hasVariant(
+                variants,
+                "disabled",
+                "disabled"
+              )
+            })}
+          >
             <input
               data-plasmic-name={"text"}
               data-plasmic-override={overrides.text}

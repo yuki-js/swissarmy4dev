@@ -104,7 +104,15 @@ function PlasmicEnumInput__RenderFunc(props: {
       )}
     >
       <div className={classNames(projectcss.all, sty.freeBox__f5NK4)}>
-        <div className={classNames(projectcss.all, sty.freeBox__yuQw)}>
+        <div
+          className={classNames(projectcss.all, sty.freeBox__yuQw, {
+            [sty.freeBoxdisabled__yuQw7QVpw]: hasVariant(
+              variants,
+              "disabled",
+              "disabled"
+            )
+          })}
+        >
           {true ? (
             <div className={classNames(projectcss.all, sty.freeBox__uOkSi)}>
               {p.renderPlasmicSlot({
@@ -117,7 +125,15 @@ function PlasmicEnumInput__RenderFunc(props: {
         </div>
 
         {true ? (
-          <div className={classNames(projectcss.all, sty.freeBox__m5Xqi)}>
+          <div
+            className={classNames(projectcss.all, sty.freeBox__m5Xqi, {
+              [sty.freeBoxdisabled__m5Xqi7QVpw]: hasVariant(
+                variants,
+                "disabled",
+                "disabled"
+              )
+            })}
+          >
             {p.renderPlasmicSlot({
               defaultContents: (
                 <React.Fragment>

@@ -107,7 +107,15 @@ function PlasmicStringInput__RenderFunc(props: {
       )}
     >
       <div className={classNames(projectcss.all, sty.freeBox___6Lh4)}>
-        <div className={classNames(projectcss.all, sty.freeBox__n4Et)}>
+        <div
+          className={classNames(projectcss.all, sty.freeBox__n4Et, {
+            [sty.freeBoxdisabled__n4Eto996O]: hasVariant(
+              variants,
+              "disabled",
+              "disabled"
+            )
+          })}
+        >
           {true ? (
             <div className={classNames(projectcss.all, sty.freeBox__aUjAf)}>
               {p.renderPlasmicSlot({
@@ -165,7 +173,15 @@ function PlasmicStringInput__RenderFunc(props: {
         </div>
 
         {true ? (
-          <div className={classNames(projectcss.all, sty.freeBox__b7JZh)}>
+          <div
+            className={classNames(projectcss.all, sty.freeBox__b7JZh, {
+              [sty.freeBoxdisabled__b7JZhO996O]: hasVariant(
+                variants,
+                "disabled",
+                "disabled"
+              )
+            })}
+          >
             <textarea
               data-plasmic-name={"text"}
               data-plasmic-override={overrides.text}

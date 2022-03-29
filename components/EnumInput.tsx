@@ -21,7 +21,7 @@ function EnumInput_<V extends string[]>(
   ref: HTMLElementRefOf<"div">
 ) {
   return (
-    <PlasmicEnumInput root={{ ref }} {...props}>
+    <PlasmicEnumInput root={{ ref }} disabled={disabled} {...props}>
       {variants.map((variant, index) => {
         return (
           <EnumInputVariant

@@ -12,6 +12,7 @@
   max-width: 100%;
   min-width: 0;
   padding: 8px;
+  border-bottom: 1px solid var(--token-U_l1l1ah7MXVp);
 }
 .freeBox__fRjAy {
   display: flex;

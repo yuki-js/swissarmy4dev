@@ -44,14 +44,19 @@ import sty from "./PlasmicStep.module.css"; // plasmic-import: mOauKsDZOO/css
 
 export type PlasmicStep__VariantMembers = {
   hasNext: "hasNext";
+  loading: "loading";
 };
 
 export type PlasmicStep__VariantsArgs = {
   hasNext?: SingleBooleanChoiceArg<"hasNext">;
+  loading?: SingleBooleanChoiceArg<"loading">;
 };
 
 type VariantPropType = keyof PlasmicStep__VariantsArgs;
-export const PlasmicStep__VariantProps = new Array<VariantPropType>("hasNext");
+export const PlasmicStep__VariantProps = new Array<VariantPropType>(
+  "hasNext",
+  "loading"
+);
 
 export type PlasmicStep__ArgsType = {
   children?: React.ReactNode;
@@ -68,6 +73,7 @@ export type PlasmicStep__OverridesType = {
 export interface DefaultStepProps {
   children?: React.ReactNode;
   hasNext?: SingleBooleanChoiceArg<"hasNext">;
+  loading?: SingleBooleanChoiceArg<"loading">;
   className?: string;
 }
 
@@ -94,6 +100,11 @@ function PlasmicStep__RenderFunc(props: {
             variants,
             "hasNext",
             "hasNext"
+          ),
+          [sty.freeBoxloading__eZfgrDuFfc]: hasVariant(
+            variants,
+            "loading",
+            "loading"
           )
         })}
       >
@@ -109,8 +120,18 @@ function PlasmicStep__RenderFunc(props: {
             data-plasmic-name={"execute"}
             data-plasmic-override={overrides.execute}
             className={classNames("__wab_instance", sty.execute, {
-              [sty.executehasNext]: hasVariant(variants, "hasNext", "hasNext")
+              [sty.executehasNext]: hasVariant(variants, "hasNext", "hasNext"),
+              [sty.executeloading]: hasVariant(variants, "loading", "loading"),
+              [sty.executeloading_hasNext]:
+                hasVariant(variants, "hasNext", "hasNext") &&
+                hasVariant(variants, "loading", "loading")
             })}
+            loading={
+              hasVariant(variants, "hasNext", "hasNext") &&
+              hasVariant(variants, "loading", "loading")
+                ? true
+                : undefined
+            }
           >
             {"Execute"}
           </Button>

@@ -49,8 +49,12 @@
   min-width: 0;
   min-height: 0;
   border-radius: 5px;
-  padding: 0px;
+  padding: 6px;
   border: 1px solid #9e9d9b4d;
+}
+.freeBoxdisabled__m5Xqi7QVpw {
+  box-shadow: none;
+  border-style: none;
 }
 .root:focus-within .freeBox__m5Xqi {
   box-shadow: 0px 1px 3px 1px #0000000d, 0px 2px 8px 0px #ed7a4d33;

@@ -101,7 +101,15 @@ function PlasmicBooleanInput__RenderFunc(props: {
         sty.root
       )}
     >
-      <div className={classNames(projectcss.all, sty.freeBox__odWmZ)}>
+      <div
+        className={classNames(projectcss.all, sty.freeBox__odWmZ, {
+          [sty.freeBoxdisabled__odWmZfaOkT]: hasVariant(
+            variants,
+            "disabled",
+            "disabled"
+          )
+        })}
+      >
         {true ? (
           <div className={classNames(projectcss.all, sty.freeBox__r7Pf)}>
             {p.renderPlasmicSlot({
