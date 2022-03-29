@@ -5,7 +5,7 @@ import * as React from "react";
 import { ScreenVariantProvider } from "../components/plasmic/swissarmy_4_dev/PlasmicGlobalVariant__Screen";
 import { PlasmicRoot } from "../components/plasmic/swissarmy_4_dev/PlasmicRoot";
 import SidebarItem from "../components/SidebarItem";
-import { pages } from "../iopages";
+import { pages } from "../pipelines";
 
 function Root() {
   const sidebar = pages.map((p, i) => (

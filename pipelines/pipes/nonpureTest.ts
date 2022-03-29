@@ -15,16 +15,30 @@ const step0 = createStep({
         ),
         fn: async (args) => {
           const [network] = args;
-          const networkId = {
-            Ethereum: 1,
-            Polygon: 2,
-            Avalanche: 3,
+          const chainId = {
+            Ethereum: "0x1",
+            Polygon: "0x89",
+            Avalanche: "0xa86a",
           }[network];
 
-          const addresses = await (window as any).ethereum.request({
-            method: "eth_requestAccounts",
-            params: [],
+          const [
+            {
+              caveats: [{ value: addresses }],
+            },
+          ] = await (window as any).ethereum.request({
+            method: "wallet_requestPermissions",
+            params: [
+              {
+                eth_accounts: {},
+              },
+            ],
           });
+
+          await (window as any).ethereum.request({
+            method: "wallet_switchEthereumChain",
+            params: [{ chainId }],
+          });
+
           return createStep({
             inArg: Args(Enum("Address to use", addresses)),
             fn: async (args) => {

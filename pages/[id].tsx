@@ -131,7 +131,7 @@ function PipelinePage() {
         <Step
           key={i}
           hasNext={!step.sync && !!step.fn && !locked}
-          execute={{ props: { onClick: () => runStep(i) } }}
+          execute={{ onClick: () => runStep(i) }}
           loading={loading}
         >
           {step.inArg.map((arg, j) => {
