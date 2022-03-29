@@ -1,8 +1,8 @@
 import * as React from "react";
-import Step from "../components/Step";
+import Step from "../../components/Step";
 import { ToType, TArg, Args, String, Enum } from "@yuki-js/tinytype";
-import StringInput from "../components/StringInput";
-import EnumInput from "../components/EnumInput";
+import StringInput from "../../components/StringInput";
+import EnumInput from "../../components/EnumInput";
 
 type Step<I extends TArg = TArg> = {
   inArg: I;
