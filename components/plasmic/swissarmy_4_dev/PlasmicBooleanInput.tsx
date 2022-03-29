@@ -114,8 +114,7 @@ function PlasmicBooleanInput__RenderFunc(props: {
           <div className={classNames(projectcss.all, sty.freeBox__r7Pf)}>
             {p.renderPlasmicSlot({
               defaultContents: "Enter some text",
-              value: args.title,
-              className: classNames(sty.slotTargetTitle)
+              value: args.title
             })}
           </div>
         ) : null}

@@ -61,6 +61,26 @@
       }
     },
     {
+      "name": "sidebarWidthCollapsed",
+      "type": "spacing",
+      "value": "40px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "3sWsabkqMN5rF9tgqCnVDh",
+        "id": "AYb4UWSp3"
+      }
+    },
+    {
+      "name": "sidebarWidthExpanded",
+      "type": "spacing",
+      "value": "300px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "3sWsabkqMN5rF9tgqCnVDh",
+        "id": "_HTRJQdhF"
+      }
+    },
+    {
       "name": "transparent",
       "type": "color",
       "value": "transparent",

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C700%3B0%2C900&family=Inter%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B0%2C900&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B0%2C900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B0%2C900&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B0%2C900&display=swap");
 
 .plasmic_tokens {
   --token-p7cn3DocJidjS: #ed7a4d;
@@ -15,11 +15,15 @@
   --plasmic-token-transparent: var(--token-pOwm109YQcEkY);
   --token-Oja_R7S7anVvW: #4286f4;
   --plasmic-token-link: var(--token-Oja_R7S7anVvW);
+  --token-AYb4UWSp3: 40px;
+  --plasmic-token-sidebar-width-collapsed: var(--token-AYb4UWSp3);
+  --token-_HTRJQdhF: 300px;
+  --plasmic-token-sidebar-width-expanded: var(--token-_HTRJQdhF);
 }
 
 .plasmic_default_styles {
-  --mixin-KmoGA9x6p4pfC_font-family: "Roboto";
-  --mixin-KmoGA9x6p4pfC_font-size: 16px;
+  --mixin-KmoGA9x6p4pfC_font-family: "Inter";
+  --mixin-KmoGA9x6p4pfC_font-size: 17px;
   --mixin-KmoGA9x6p4pfC_font-weight: 400;
   --mixin-KmoGA9x6p4pfC_font-style: normal;
   --mixin-KmoGA9x6p4pfC_color: #535353;
