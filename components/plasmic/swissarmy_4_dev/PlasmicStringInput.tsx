@@ -188,6 +188,7 @@ function PlasmicStringInput__RenderFunc(props: {
                 projectcss.all,
                 projectcss.textarea,
                 sty.text,
+                "resizeTextarea" as const,
                 {
                   [sty.textdisabled]: hasVariant(
                     variants,

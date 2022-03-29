@@ -3,7 +3,9 @@
     {
       "projectId": "3sWsabkqMN5rF9tgqCnVDh",
       "version": "latest",
-      "dependencies": {},
+      "dependencies": {
+        "8PtdGodUbexNYgkuyBUcWu": "0.0.1"
+      },
       "lang": "ts",
       "fileLocks": [
         {
@@ -14,12 +16,12 @@
         {
           "type": "renderModule",
           "assetId": "WReG0kfettn73",
-          "checksum": "84d5722ff2ebece5d3207019ebfaa930"
+          "checksum": "e848bfdcf14a4ac25697385e266969f1"
         },
         {
           "type": "cssRules",
           "assetId": "WReG0kfettn73",
-          "checksum": "84d5722ff2ebece5d3207019ebfaa930"
+          "checksum": "e848bfdcf14a4ac25697385e266969f1"
         },
         {
           "type": "renderModule",
@@ -94,12 +96,12 @@
         {
           "type": "renderModule",
           "assetId": "eJuRTncMA_",
-          "checksum": "cbc66e9e03037faf81a2b0d35777ba29"
+          "checksum": "6604ea656081593e5bb9397c80279aff"
         },
         {
           "type": "cssRules",
           "assetId": "eJuRTncMA_",
-          "checksum": "cbc66e9e03037faf81a2b0d35777ba29"
+          "checksum": "6604ea656081593e5bb9397c80279aff"
         },
         {
           "type": "icon",
@@ -119,12 +121,12 @@
         {
           "type": "renderModule",
           "assetId": "b_S_J7Ei1n",
-          "checksum": "2775cce464c35e1bb2e01f4ed8d0804e"
+          "checksum": "643437178724189bd58791b54e6736b4"
         },
         {
           "type": "cssRules",
           "assetId": "b_S_J7Ei1n",
-          "checksum": "2775cce464c35e1bb2e01f4ed8d0804e"
+          "checksum": "643437178724189bd58791b54e6736b4"
         },
         {
           "type": "renderModule",
@@ -144,12 +146,12 @@
         {
           "type": "renderModule",
           "assetId": "meQXaQnIIWq",
-          "checksum": "4a12561e12eea5d6d74f30697af03518"
+          "checksum": "feda377aea96cf5f3bca2c4411a98337"
         },
         {
           "type": "cssRules",
           "assetId": "meQXaQnIIWq",
-          "checksum": "4a12561e12eea5d6d74f30697af03518"
+          "checksum": "feda377aea96cf5f3bca2c4411a98337"
         },
         {
           "type": "icon",
@@ -164,12 +166,12 @@
         {
           "type": "renderModule",
           "assetId": "1VmMofk7-8f",
-          "checksum": "0e2f1ff9d8410a1d90b9271df30e17bc"
+          "checksum": "6270b8ce635376e2a2133b8236555699"
         },
         {
           "type": "cssRules",
           "assetId": "1VmMofk7-8f",
-          "checksum": "0e2f1ff9d8410a1d90b9271df30e17bc"
+          "checksum": "6270b8ce635376e2a2133b8236555699"
         },
         {
           "type": "renderModule",
@@ -218,8 +220,52 @@
         },
         {
           "assetId": "3sWsabkqMN5rF9tgqCnVDh",
+          "checksum": "91db0f0b47a2b37321755a9b03026261",
+          "type": "globalContexts"
+        },
+        {
+          "assetId": "3sWsabkqMN5rF9tgqCnVDh",
           "type": "projectCss",
           "checksum": "bd50cc3b4680711ff79976866f37a16b"
+        }
+      ],
+      "codegenVersion": "0.0.1"
+    },
+    {
+      "projectId": "8PtdGodUbexNYgkuyBUcWu",
+      "version": "0.0.1",
+      "dependencies": {},
+      "lang": "ts",
+      "fileLocks": [
+        {
+          "type": "globalVariant",
+          "assetId": "sXGD-CM5OUe6V",
+          "checksum": "dd348a2f3c0afd7461d9920e10ae201d"
+        },
+        {
+          "assetId": "8PtdGodUbexNYgkuyBUcWu",
+          "type": "projectCss",
+          "checksum": "5aa7896743c83d312cb254aa4f507a7b"
+        },
+        {
+          "assetId": "8PtdGodUbexNYgkuyBUcWu",
+          "checksum": "1621a29ff33016eb10ed2535f2492fb4",
+          "type": "globalContexts"
+        },
+        {
+          "type": "icon",
+          "assetId": "sANpVw76gRvlG",
+          "checksum": "7e2f2784e986e602054d2866df27063b"
+        },
+        {
+          "type": "icon",
+          "assetId": "FGt6hMTQdm0WE",
+          "checksum": "094a49e0f9855ec4d41fd6cbdc126cc2"
+        },
+        {
+          "type": "image",
+          "assetId": "F4wuT56pXm7eb",
+          "checksum": "aa722ce41d365ae9b63f82d5a70840a5"
         }
       ],
       "codegenVersion": "0.0.1"
